@@ -4,10 +4,9 @@
 import Image from 'next/image';
 import ProductCard from './components/ProductCard';
 import ContactForm from './components/ContactForm';
-import { useTheme } from '@/contexts/ThemeContext'; // Corrected path
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'; // Example icons
+import { useTheme } from '@/contexts/ThemeContext';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
-// Product data remains the same
 const products = [
   {
     name: 'Carolina Reaper 100ML',
@@ -40,8 +39,7 @@ export default function HomePage() {
   const whatsappNumber = "553186131037";
   const whatsappMessage = "Olá! Gostaria de mais informações sobre os produtos da Tradição de Minas.";
 
-  // Define font classes based on theme_definitions.md (example: Lobster for titles, Montserrat for body)
-  const titleFont = 'font-lobster'; // Or 'font-pacifico'
+  const titleFont = 'font-lobster'; 
   const bodyFont = 'font-montserrat';
 
   return (
@@ -82,7 +80,7 @@ export default function HomePage() {
           </div>
           <h2 className={`text-3xl sm:text-4xl lg:text-5xl ${titleFont} text-red-700 dark:text-red-500 mb-4`}>O Verdadeiro Sabor de Minas na sua Mesa</h2>
           <p className={`text-md sm:text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto ${bodyFont}`}>Descubra nossos molhos e temperos artesanais, feitos com tradição e paixão.</p>
-          <a href="#produtos" className={`bg-red-600 hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-lg text-md sm:text-lg transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105 ${bodyFont}">
+          <a href="#produtos" className={`bg-red-600 hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-lg text-md sm:text-lg transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105 ${bodyFont}`}>
             Conheça Nossos Produtos
           </a>
         </div>
@@ -92,7 +90,7 @@ export default function HomePage() {
         {/* Sobre Nós Section */}
         <section id="sobre" className="my-10 sm:my-12 p-6 sm:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transition-colors duration-300">
           <h3 className={`text-2xl sm:text-3xl ${titleFont} text-green-700 dark:text-green-500 mb-6 text-center`}>Sobre a Tradição de Minas</h3>
-          <div className={`text-sm sm:text-base text-gray-700 dark:text-gray-300 space-y-3 text-justify ${bodyFont}">
+          <div className={`text-sm sm:text-base text-gray-700 dark:text-gray-300 space-y-3 text-justify ${bodyFont}`}>
             <p>Localizada na acolhedora região metropolitana de Belo Horizonte, em Minas Gerais, a <strong className="text-gray-800 dark:text-gray-100">Tradição de Minas Alimentos</strong> nasceu do desejo de compartilhar o verdadeiro sabor da culinária mineira. Nossa paixão é levar à sua mesa produtos de altíssima qualidade, elaborados com ingredientes selecionados e o carinho das receitas que atravessam gerações.</p>
             <p>Valorizamos a autenticidade, o frescor e a tradição em cada item que produzimos, buscando sempre proporcionar uma experiência gastronômica única e memorável.</p>
           </div>
